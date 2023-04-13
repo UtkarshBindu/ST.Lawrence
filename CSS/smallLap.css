@@ -1,0 +1,95 @@
+/* home sectio */
+
+#home {
+    /* width: 894px; */
+    width: 760px;
+}
+
+#home::before {
+    height: 116%;
+    width: 115%;
+}
+
+/* aboust us  */
+#boutinfo p {
+    width: 85%;
+    font-size: 1.4rem;
+}
+
+
+
+/* hm info section  */
+
+#sirinfo {
+    /* grid-template-columns: 295px 596px 286px; */
+    grid-template-columns: 267px 582px 286px;
+
+}
+
+.sminfo {
+    /* font-size: 1.4rem; */
+    font-size: 1.1rem;
+}
+
+.colinsir {
+    /* margin-left: 34px; */
+    margin-left: 15px;
+
+}
+
+.sirimg img {
+    height: 230px;
+    width: 235px;
+}
+
+/* infrastructure area  */
+
+#structure {
+    margin-left: 45px;
+    grid-template-columns: 475px 475px;
+    grid-gap: 10px 25px;
+    grid-template-rows: 300px 265px;
+}
+
+.box p {
+    font-size: 1.0rem;
+}
+
+/* carricular activities  */
+
+#curriBody {
+    margin-left: 30px;
+    grid-gap: 25px;
+    grid-template-columns: 520px 520px;
+}
+
+.curriBox img {
+    height: 52px;
+    width: 52px;
+
+}
+
+.curriBox p {
+    padding-left: 77px;
+    font-size: 1.3rem;
+}
+
+/* why  */
+
+#why p {
+    margin-left: 35px;
+    font-size: 1.39rem;
+    width: 80%;
+}
+
+
+/* footer  */
+
+footer {
+    /* width: 116%; */
+    color: white;
+}
+#footer::before{
+    background-color: black;
+    color: white;
+}

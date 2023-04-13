@@ -1,0 +1,400 @@
+/* css reset  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(242 242 242);
+}
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar : logo  */
+
+#logo img {
+    height: 82px;
+    width: 82px;
+    margin-left: 11px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+/* Navigation Bar : list styling  */
+
+#navbar {
+    position: absolute;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+#navbar ul li a {
+    color: whitesmoke;
+    display: block;
+    padding: 5px 40px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(220, 219, 219);
+}
+
+/* HOME : bg styling */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 720px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../IMG/Untitled\ design\ \(1\).png') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 6px 5px 4px black;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#home p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 6px 5px 4px black;
+    font-family: 'Open Sans', sans-serif;
+
+
+
+
+
+
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(4000, end) forwards,
+        blink-caret 0.75s step-end infinite;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+
+
+
+
+}
+
+/* Define the typing animation keyframes */
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Define the caret blinking animation keyframes */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #333;
+    }
+}
+
+
+/* About US section  */
+#aboutus h1 {
+    font-size: 1.3rem;
+
+}
+
+#boutinfo p {
+    width: 76%;
+    margin-top: 24px;
+    margin-left: 32px;
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+
+/* About US section : about the founders  */
+
+
+
+#sirinfo {
+    display: grid;
+    grid-template-columns: 370px 641px 286px;
+    margin-top: -13px;
+
+}
+
+#smhead {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.9rem;
+    color: rgb(19 36 74);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.sirimg img {
+    height: 260px;
+    width: 265px;
+    margin-top: 35px;
+    margin-bottom: 16px;
+    border: 2px dotted black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.colinsir {
+    margin-left: 85px;
+}
+
+.flaviamam {
+    margin-right: 32px;
+}
+
+.sminfo {
+    width: 91%;
+    margin-top: 31px;
+    margin-left: 23px;
+    font-size: 1.3rem;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    /* font-weight: bold; */
+}
+
+
+/* infrastructure area  */
+
+#structure {
+    display: grid;
+    grid-gap: 10px 35px;
+    grid-template-columns: 530px 530px;
+    grid-template-rows: 347px 310px;
+    margin-top: 55px;
+    margin-right: 110px;
+    margin-left: 142px;
+}
+
+.box {
+    /* background-color: red; */
+    background-color: rgb(236 236 236);
+    box-shadow: 0px 0px 35px #575252;
+    border-radius: 5px;
+}
+
+.box h3 {
+    font-size: 1.74rem;
+    margin-bottom: 4px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #484848;
+}
+
+.box p {
+    border-left: 5px solid #223a72;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    padding-left: 14px;
+    font-size: 1.3rem;
+    width: 95%;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* curricular activities area  */
+
+#curriHead h3 {
+    margin-top: 35px;
+}
+
+#curriHead p {
+    width: 76%;
+    font-size: 1.3rem;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+
+
+#curriBody {
+    display: grid;
+    grid-gap: 55px;
+    grid-template-columns: 550px 550px;
+    margin-right: 88px;
+    margin-bottom: 25px;
+    margin-left: 105px;
+}
+
+.curriBox {
+    /* background-color: red; */
+
+    background-color: rgb(236 236 236);
+    box-shadow: 0px 0px 35px #575252;
+    border-radius: 5px;
+}
+
+.curriBox img {
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 2px;
+    margin-top: 10px;
+    margin-left: 12.5px;
+    margin-right: 12.5px;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    background-color: #e0dede;
+    box-shadow: 0px 0px 13px black;
+}
+
+.curriBox h4 {
+    padding-left: 95px;
+    font-size: 2.2rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px #484848;
+}
+
+.curriBox p {
+    padding-right: 15px;
+    padding-left: 95px;
+    font-size: 1.5rem;
+    text-align: justify;
+    /* font-weight: bold; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* why section  */
+#why h5 {
+    font-size: 1.9rem;
+    width: 47%;
+    margin-left: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#why p {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    margin-left: 61px;
+    width: 69%;
+    text-align: justify;
+    margin-top: 12px;
+    background-color: #f2eeee;
+    box-shadow: 0px 0px 7px grey;
+}
+
+
+/* FOOTER AREA  */
+
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+#footlogo img {
+    height: 35px;
+    width: 35px;
+    margin-left: 20px;
+    filter: drop-shadow(0px 0px 5px white);
+}
+
+#footname {
+    margin-top: 6px;
+    margin-left: 13px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.0rem;
+}
+
+#copyright {
+    margin-top: 8px;
+    margin-left: 11px;
+    /* font-weight: bold; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+}
+
+
+/* utility classes */
+
+.h-primary {
+    font-size: 3.5rem;
+    padding: 12px;
+
+}
+
+.h-secondary {
+    font-size: 2.5rem;
+    margin-left: 50px;
+    margin-top: 25px;
+    color: rgb(34 58 114);
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+.underblue {
+    padding-bottom: 4px;
+    border-bottom: 5px solid skyblue;
+}
+
+.center {
+    text-align: center;
+}

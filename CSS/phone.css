@@ -1,0 +1,58 @@
+/* navbar section  */
+#navbar {
+    margin-left: 29rem;
+    margin-top: 2rem;
+}
+
+#navbar ul {
+    display: none;
+}
+
+#logo img {
+    height: 150px;
+    width: 150px;
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#navbar::before {
+    opacity: 0;
+}
+
+/* home section  */
+#home::before {
+    height: 247%;
+    width: 268%;
+}
+
+#home {
+
+    height: 1630px;
+    width: 1054px;
+
+    padding: 0px 0px;
+}
+
+#home p {
+    display: none;
+}
+
+.h-primary {
+    font-size: 5.5rem;
+    padding: 12px;
+}
+
+/* about section  */
+#sirinfo {
+    display: none;
+}
+
+#smhead {
+    display: none;
+}
+
+#boutinfo p {
+    width: 230%;
+    font-size: 1.9rem;
+}
